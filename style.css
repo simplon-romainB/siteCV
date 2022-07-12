@@ -4,6 +4,8 @@
     font-size: 16px;
 }
 
+@media screen and (min-width: 1024px) {
+
 .nom {
     animation: typing 3s steps(30, end), blink .75s step-end infinite;
     font-size: 70px;
@@ -15,6 +17,10 @@
   	letter-spacing: 2px;
     color: white;
     white-space: nowrap;
+}
+
+.mnom {
+    display: none;
 }
 .navcontainer {
     height: 25vh;
@@ -54,9 +60,7 @@
     transition: all 0.5S;
 }
 .logo:hover {
-    scale: 1.1;
-    
-   
+    scale: 1.1;   
 }
 .social {
     height: 75vh;
@@ -104,5 +108,187 @@
     }
     50% { 
         border-color: white; 
+    }
+}
+footer {
+    height:25vh;
+    width: 100%;
+}
+.footertext {
+    font-size: 3rem;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+    .buttondown {
+        background-color: rgb(97, 97, 175);
+        width: 30%;
+        margin-left: 35vw;
+        height: 15vh;
+        border-radius: 10px;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        bottom: 68%;
+        
+    }
+    .navcontainer {
+        height: 25vh;
+        width: 100%;
+        background-image: url(/assets/lines-of-code.width-808.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;   
+    }
+    .mnom {
+        animation: typing 3s steps(30, end), blink .75s step-end infinite;
+        font-size: 30px;
+        font-weight: 700;
+        border-right: 4px solid white;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        letter-spacing: 2px;
+        color: white;
+        /*white-space: nowrap;*/
+    }
+    @keyframes typing {
+        from { 
+            width: 0% 
+        }
+        to { 
+            width: 70% 
+        }
+    }
+    
+    @keyframes blink {
+        from, to { 
+            border-color: transparent 
+        }
+        50% { 
+            border-color: white; 
+        }
+    }
+    .sec1 {
+        width: 50%;
+        height: 75vh;
+        border: 3px solid rgb(97,97,175);
+        position: relative;
+        background-image: url(/assets/wordle.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y:bottom;
+        display: inline-block;
+    }
+    .nom {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .buttondown {
+        background-color: rgb(97, 97, 175);
+        width: 50%;
+        margin-left: 25vw;
+        height: 15vh;
+        border-radius: 10px;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        bottom: 68%;
+        
+    }
+    .navcontainer {
+        height: 25vh;
+        width: 100%;
+        background-image: url(/assets/lines-of-code.width-808.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;   
+    }
+    .mnom {
+        animation: typing 3s steps(30, end), blink .75s step-end infinite;
+        font-size: 30px;
+        font-weight: 700;
+        border-right: 4px solid white;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        letter-spacing: 2px;
+        color: white;
+        /*white-space: nowrap;*/
+    }
+    .nom {
+        display: none;
+    }
+    @keyframes typing {
+        from { 
+            width: 0% 
+        }
+        to { 
+            width: 70% 
+        }
+    }
+    
+    @keyframes blink {
+        from, to { 
+            border-color: transparent 
+        }
+        50% { 
+            border-color: white; 
+        }
+    }
+    .sec1 {
+        width: 100%;
+        height: 25vh;
+        border: 3px solid rgb(97,97,175);
+        position: relative;
+        background-image: url(/assets/wordle.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y:bottom;
+        display: block;
+    }
+    .social {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top:223%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        
+        
+    }
+    .logo {
+        height:20vh;
+        width: 10vw;
+        transition: all 0.5S;
+    }
+    .logo:hover {
+        scale: 1.1;   
+    }
+    .logo {
+        height:40vh;
+        width: 100vw;
+        transition: all 0.5S;
+    }
+
+    .projetitre {
+    font-size: 3rem;
+    text-align: center;
+    }
+    footer {
+        height:25vh;
+        width: 100%;
+        position: absolute;
+        top: 343%;
+    }
+    .footertext {
+        font-size: 3rem;
+        text-align: center;
     }
 }
